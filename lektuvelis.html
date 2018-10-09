@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <style>
+    
+           .fonas{
+           width:1000px;
+           height:1000px;
+           background-color:cyan;
+           position:fixed;
+       }
+      
+           .griauciai{
+           width:100px;
+           height:150px;
+           border:3px solid blue;
+           border-radius:25%;
+           margin-left:calc(50% - 100px);
+           margin-top:calc( 50% - 150px);
+           background-color:darkgoldenrod;
+           position:relative;
+           text-align:center;
+           animation:skrydis1 5s alternate infinite;
+       }
+
+       .vinis{
+width:10px;
+height:10px;
+background-color:brown;
+left:calc(50% - 5px);
+bottom:calc(50% - 10px);
+position:absolute;
+padding:0px;
+margin:0px;
+       }
+.vienas-sraigtas{
+    width:2%;
+    height:130%;
+    padding:5px;
+    background-color:goldenrod;
+    border:1px solid black;
+    position:absolute;
+    left:43%;
+    top:-18%;
+    animation:spin1 2s linear infinite;
+    
+}
+.antras-sraigtas{
+    height:1%;
+    width:180%;
+    padding:5px;
+    border:1px solid black;
+    background-color:forestgreen;
+    position:absolute;
+    left:-40%;
+    top:48.5%;
+    animation:spin2 2s linear infinite;
+    
+}
+
+
+@keyframes spin1 { 100% {transform:rotate(360deg); }}
+@keyframes spin2 { 100% {transform:rotate(360deg); }}
+@keyframes skrydis1 {
+    from {
+        margin-left:calc(50% - 100px);
+        margin-top:calc( 50% - 150px);
+    }
+    to{
+        margin-left:calc(50% - 100px);
+        margin-top:calc( 10% - 150px);
+    }
+}
+@keyframes skrydis1 {
+    from{
+        margin-left:calc(50% - 100px);
+        margin-top:calc( 10% - 150px);
+    }
+    to{
+        margin-left:calc(50% - 100px);
+        margin-top:calc( 50% - 150px); 
+    }
+@keyframes debeselis1 {
+    from{
+        left:5%;
+        top:10%;
+    }
+    to{
+        left:40%;
+        top:10%;
+    }
+}
+   </style>
+   <title>pirmas uždavinys</title>
+
+</head>
+<body>
+    <div class="fonas">
+    <div class="griauciai">
+    <div class="vienas-sraigtas"></div>
+    <div class="antras-sraigtas"></div>
+    <div class="vinis"></div>
+    </div>
+</div>
+   
+</body>
+</html>
